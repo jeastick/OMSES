@@ -1,8 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jan 20 19:17:43 2020
+    OMSES Plotter (OPlots)
+    Copyright (C) 2020, Jeff Eastick
 
-@author: Jeff Eastick
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+    Contact:
+    jeffeastick@gmail.com
+    jx_eastick@laurentian.ca
 """
 
 import numpy as np
