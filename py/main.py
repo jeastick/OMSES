@@ -36,12 +36,12 @@ m00 = OMSES_DE(r'C:\Users\jeffe\Documents\GitHub\OMSES\input\model00.xlsx')
 m00.run_all() 
 
 #use OPlots module to graph various results:
-plot_structure_at_i(m00,7)
-plt_util_flow(m00,'EE')
+# plot_structure_at_i(m00,7)
+# plt_util_flow(m00,'EE')
 
 # delete the model and garbage collect after each model if you are going to run several models as a batch, otherwise you may run out of memory.
-del m00
-gc.collect()
+# del m00
+# gc.collect()
 
 
 

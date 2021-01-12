@@ -247,6 +247,8 @@ class OMSES_DE:
     #Time Scale Temporal Division
     self.d_gen  = self.file_in_general.T.to_dict()
     
+    
+    #Note: this file name string manipulation to get the filename will only work with Windows systems:
     self.modelname = self.datafile.split('\\')[len(self.datafile.split('\\'))-1].strip('.xlsx')
         
     print("Model name is " + self.modelname)
@@ -389,9 +391,8 @@ class OMSES_DE:
     self.mat_wind_supr_con = np.sign(self.mat_wind_supr).clip(max=0)
     print("Wind Superstructure data setup complete.\n")        
     
-    self.datafile_wind = r'C:\Users\jeffe\Documents\GitHub\MASc_Thesis\model_wind_data.xlsx'
-    
-    self.file_in_wind_data = pd.read_excel(self.datafile_wind,
+
+    self.file_in_wind_data = pd.read_excel(self.datafile,
                                           sheet_name="Wind",
                                           header=1, 
                                           nrows=self.ij,
